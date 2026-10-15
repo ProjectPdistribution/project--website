@@ -364,6 +364,19 @@ footer .logo svg{width:196px;height:64px}
 }
 
 /* RESPONSIVE */
+@media(min-width:861px) and (max-width:1060px){
+  nav.links{gap:16px}
+  nav.links a{letter-spacing:.09em}
+  header.nav .bar{gap:16px}
+  .langs .fl{display:none}
+  .langs button{padding:4px 6px;font-size:.68rem}
+}
+@media(min-width:861px) and (max-width:960px){
+  nav.links{gap:11px}
+  nav.links a{font-size:.7rem;letter-spacing:.05em}
+  header.nav .bar{gap:10px}
+  header.nav .logo svg{width:130px;height:42px}
+}
 @media(max-width:1000px){
   .pillars{grid-template-columns:1fr;gap:0}
   .pillar{padding:30px 0;border-left:0;border-top:1px solid var(--line)}
@@ -432,6 +445,7 @@ footer .logo svg{width:196px;height:64px}
       <a href="#prozess" data-i18n="nav.process">Ablauf</a>
       <a href="#zielgruppe" data-i18n="nav.target">Für wen</a>
       <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="news.html" data-i18n="nav.news">News</a>
       <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
     </nav>
     <div class="langs" role="group" aria-label="Sprache wählen / Choose language">
@@ -706,6 +720,7 @@ footer .logo svg{width:196px;height:64px}
         <a href="#usp" data-i18n="nav.usp">Leistungen</a>
         <a href="#prozess" data-i18n="nav.process">Ablauf</a>
         <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="news.html" data-i18n="nav.news">News</a>
         <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
         <button type="button" data-legal="imprint" data-i18n="foot.imprint">Impressum</button>
         <button type="button" data-legal="privacy" data-i18n="foot.privacy">Datenschutz</button>
@@ -746,7 +761,7 @@ var T = {};
 T.de = {
 "meta.title":"Project P Distribution GmbH – Lebensmittel Distributor Deutschland | EDEKA Lieferant werden",
 "meta.desc":"Datengetriebene Lebensmitteldistribution aus Berlin. Wir bringen internationale Lebensmittel, Snacks und Getränke in den deutschen Einzelhandel: Marktforschung, DPG-Anmeldung, LMIV-Kennzeichnung, Zollabwicklung und Listung aus einer Hand.",
-"nav.usp":"Leistungen","nav.process":"Ablauf","nav.target":"Für wen","nav.faq":"FAQ","nav.contact":"Kontakt",
+"nav.usp":"Leistungen","nav.process":"Ablauf","nav.target":"Für wen","nav.faq":"FAQ","nav.news":"News","nav.contact":"Kontakt",
 "hero.h1":"Ihr Produkt. Unser Netzwerk. <em>Der deutsche Markt.</em>",
 "hero.sub":"Project P Distribution ist eine datengetriebene Lebensmitteldistribution aus Berlin. Wir bringen internationale Lebensmittel, Snacks, Süßwaren und Getränke in den deutschen Einzelhandel – von der ersten Marktanalyse bis zur Regalplatzierung.",
 "hero.cta":"Jetzt Partner werden","hero.ctaAlt":"So funktioniert es",
@@ -849,7 +864,7 @@ T.de = {
 T.en = {
 "meta.title":"Project P Distribution GmbH – Food Distributor Germany | Become an EDEKA Supplier",
 "meta.desc":"Data-driven food distribution from Berlin. We bring international food, snacks and beverages into German retail: consumer research, DPG registration, food labelling, customs clearance and listings with German supermarket chains.",
-"nav.usp":"Services","nav.process":"Process","nav.target":"Who we work with","nav.faq":"FAQ","nav.contact":"Contact",
+"nav.usp":"Services","nav.process":"Process","nav.target":"Who we work with","nav.faq":"FAQ","nav.news":"News","nav.contact":"Contact",
 "hero.h1":"Your product. Our network. <em>The German market.</em>",
 "hero.sub":"Project P Distribution is a data-driven food distributor based in Berlin. We bring international food, snacks, confectionery and beverages into German retail – from the first market analysis to the shelf.",
 "hero.cta":"Become a partner","hero.ctaAlt":"See how it works",
@@ -952,7 +967,7 @@ T.en = {
 T.tr = {
 "meta.title":"Project P Distribution GmbH – Almanya Gıda Distribütörü | EDEKA Tedarikçisi Olun",
 "meta.desc":"Berlin merkezli, veriye dayalı gıda distribütörü. Uluslararası gıda, atıştırmalık ve içecekleri Alman perakendesine taşıyoruz: pazar araştırması, DPG kaydı, etiketleme, gümrükleme ve zincir marketlerde listelenme.",
-"nav.usp":"Hizmetler","nav.process":"Süreç","nav.target":"Kimlerle çalışıyoruz","nav.faq":"SSS","nav.contact":"İletişim",
+"nav.usp":"Hizmetler","nav.process":"Süreç","nav.target":"Kimlerle çalışıyoruz","nav.faq":"SSS","nav.news":"Haberler","nav.contact":"İletişim",
 "hero.h1":"Ürününüz. Ağımız. <em>Alman pazarı.</em>",
 "hero.sub":"Project P Distribution, Berlin merkezli veriye dayalı bir gıda distribütörüdür. Uluslararası gıda, atıştırmalık, şekerleme ve içecekleri Alman perakendesine taşıyoruz – ilk pazar analizinden raf yerleşimine kadar.",
 "hero.cta":"Partner olun","hero.ctaAlt":"Nasıl işliyor",
@@ -1055,7 +1070,7 @@ T.tr = {
 T.sq = {
 "meta.title":"Project P Distribution GmbH – Distributor Ushqimor në Gjermani | Bëhuni furnitor i EDEKA-s",
 "meta.desc":"Distribucion ushqimor i bazuar në të dhëna, me qendër në Berlin. Sjellim ushqime, snacks dhe pije ndërkombëtare në tregtinë gjermane: hulumtim tregu, regjistrim DPG, etiketim, doganë dhe listim në zinxhirët e supermarketeve.",
-"nav.usp":"Shërbimet","nav.process":"Procesi","nav.target":"Me kë punojmë","nav.faq":"Pyetje të shpeshta","nav.contact":"Kontakt",
+"nav.usp":"Shërbimet","nav.process":"Procesi","nav.target":"Me kë punojmë","nav.faq":"Pyetje të shpeshta","nav.news":"Lajme","nav.contact":"Kontakt",
 "hero.h1":"Produkti juaj. Rrjeti ynë. <em>Tregu gjerman.</em>",
 "hero.sub":"Project P Distribution është një distributor ushqimor i bazuar në të dhëna, me seli në Berlin. Sjellim ushqime, snacks, ëmbëlsira dhe pije ndërkombëtare në tregtinë gjermane – nga analiza e parë e tregut deri te vendi në raft.",
 "hero.cta":"Bëhuni partner","hero.ctaAlt":"Si funksionon",
@@ -1231,10 +1246,19 @@ T.sq = {
       document.getElementById("sheetClose").focus();
     });
   });
-  function closeSheet(){ overlay.classList.remove("open"); document.body.style.overflow = ""; }
+  function closeSheet(){ overlay.classList.remove("open"); document.body.style.overflow = ""; if (/^#(impressum|datenschutz)$/i.test(location.hash)) history.replaceState(null, "", location.pathname + location.search); }
   document.getElementById("sheetClose").addEventListener("click", closeSheet);
   overlay.addEventListener("click", function(e){ if (e.target === overlay) closeSheet(); });
   document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeSheet(); });
+  function openLegalFromHash(){
+    var h = (location.hash || "").toLowerCase();
+    if (h !== "#impressum" && h !== "#datenschutz") return;
+    renderLegal(h === "#datenschutz" ? "privacy" : "imprint");
+    overlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  openLegalFromHash();
+  window.addEventListener("hashchange", openLegalFromHash);
 
   /* --- Nav --- */
   var nav = document.getElementById("nav");
